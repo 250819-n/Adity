@@ -29,7 +29,7 @@ library
 * WATIR only supports Ruby code
 
 ## Required information / models: Watir connects with the provided client and follows the instructions to open the URL, clicks the button and enters data in a textbox like any real person does. Watir is most commonly used in testing system such as RSpec, Concumber, etc. for his browser support.
-## Target platform and dependencies: The watir tool is written in Ruby.Ruby is a widely structured, general language of programming. Ruby is typed dynamically and removes waste. It follows many paradigms of programming, object and functional programming , including procedural.The watir tool is confirmed to work on x86 Linux, MacOS, windows and Solaris.
+## Target platform and dependencies: The watir tool is written in Ruby. Ruby is a widely structured, general language of programming. Ruby is typed dynamically and removes waste. It follows many paradigms of programming, object and functional programming , including procedural.The watir tool is confirmed to work on x86 Linux, MacOS, windows and Solaris.
 **Dependencies:** 
 * Linux machine, Windows, Mac
 * Command line experience
@@ -42,7 +42,19 @@ From 2019 to 2018 there was strong contribution activity but, the last commit is
 * Tutorial: There is a watir tutorial site available [here](https://www.tutorialspoint.com/watir/index.htm). The specific site contains extra material like installation, pictures, examples with command line.
 * Documentation: The official documentation is available [here](https://www.rubydoc.info/gems/watir/)
 ## Usage examples
-There are multiple examples of tools that used the afl, as they are presented in the official afl site. Some instances are:
+For example im adding a code where we can see if we  go Google.co.in web page and then click on gmail
+code-
+require 'watir'
+test_site = "https://www.google.co.in/"
+browser = Watir::Browser.new:firefox
+browser.goto test_site
+browser.link(:href, "https://mail.google.com/mail/?tab=wm").click
+puts “Test Executes”
+browser.close
+
+in this example we can open browser in the presence of watir library ,test site and when we are done we can close the browser through browser.close command.
+
+There are multiple examples of tools that used the watir. Some instances are:
 * [Unit Test Frameworks](https://www.facebook.com/notes/facebook-engineering/watir-to-webdriver-unit-test-frameworks/10150314152278920):Watir to WebDriver: Unit Test Frameworks.
 * [Opera Browser ](https://www.opera.com/computer/beta): A new member in the Watir-family
 ## Alternative tools
