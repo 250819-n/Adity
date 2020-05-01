@@ -43,16 +43,16 @@ From 2019 to 2018 there was strong contribution activity but, the last commit is
 * Documentation: The official documentation is available [here](https://www.rubydoc.info/gems/watir/)
 ## Usage examples
 For example im adding a code where we can see if we  go Google.co.in web page and then click on gmail
-code-
-require 'watir'
-test_site = "https://www.google.co.in/"
-browser = Watir::Browser.new:firefox
-browser.goto test_site
-browser.link(:href, "https://mail.google.com/mail/?tab=wm").click
-puts “Test Executes”
-browser.close
+* code-
+* require 'watir'
+* test_site = "https://www.google.co.in/"
+* browser = Watir::Browser.new:firefox
+* browser.goto test_site
+* browser.link(:href, "https://mail.google.com/mail/?tab=wm").click
+* puts “Test Executes”
+* browser.close
 
-in this example we can open browser in the presence of watir library ,test site and when we are done we can close the browser through browser.close command.
+* In this example we can open browser in the presence of watir library ,test site and when we are done we can close the browser through browser.close command.
 
 There are multiple examples of tools that used the watir. Some instances are:
 * [Unit Test Frameworks](https://www.facebook.com/notes/facebook-engineering/watir-to-webdriver-unit-test-frameworks/10150314152278920):Watir to WebDriver: Unit Test Frameworks.
